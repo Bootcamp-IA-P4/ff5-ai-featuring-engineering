@@ -31,9 +31,6 @@ wheels/
 # Notebook checkpoints
 .ipynb_checkpoints/
 
-# Jupyter Notebook
-*.ipynb
-
 ### IDE ###
 # VS Code
 .vscode/
@@ -66,6 +63,7 @@ wheels/
 !presentaciones/*.pptx
 !documentos/*.pdf
 !docs/*.pdf
+!notebooks/*.ipynb
 
 ### Logs and temp files ###
 *.log
