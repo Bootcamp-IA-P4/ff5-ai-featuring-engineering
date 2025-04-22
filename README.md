@@ -10,7 +10,7 @@
 ## 📚 Contenido Teórico Completo (PDF)
 
 ### 1️⃣ Introducción a la Ingeniería de Características
-- Definición y analogía culinaria
+- Definición
 - Posición en el flujo de trabajo de ML
 
 ### 2️⃣ Importancia Crucial
@@ -136,24 +136,60 @@ mkdir -p {data/raw,notebooks,src,reports/figures}
 ```
 
 ## 📂 Estructura del Proyecto
-
 ```
-/project_root
-├── /data
-│   ├── /raw          # Datos crudos (.gitignored)
-│   └── /processed    # Datos procesados (.gitignored)
-├── /notebooks        # Ejemplos prácticos
-├── /src              # Código fuente
-├── /reports
-│   └── /figures      # Gráficos y visualizaciones
-├── .gitignore
-├── pyproject.toml
-└── requirements.txt
+/repository
+├── /data                   # Datos del proyecto
+│   ├── /raw                # Datos crudos (.gitignored)
+│   └── /processed          # Datos procesados (.gitignored)
+│
+├── /documents              # Documentación teórica
+│   └── Ingenieria-de-Caracteristicas_Presentacion-Completa.pdf (2.7 MB)
+│
+├── /notebooks              # Ejemplos prácticos en Jupyter
+│
+├── /presentations          # Presentaciones ejecutivas
+│   └── FINAL-Ingenieria-de-Caracteristicas-en-Ciencia-de-Datos.pptx (4.2 MB)
+│
+├── /reports                # Reportes y visualizaciones
+│   └── /figures            # Gráficos generados
+│
+├── /src                    # Código fuente organizado por técnicas
+│   │
+│   ├── /categorical_vars_codification  # Codificación variables categóricas
+│   │   ├── binary_encoding.py
+│   │   ├── frequency_encoding.py
+│   │   ├── label_encoding.py
+│   │   ├── one_hot_encoding.py
+│   │   └── target_encoding.py
+│   │
+│   ├── /new_features_creation         # Creación de nuevas features
+│   │   ├── aggregations.py
+│   │   ├── binning.py
+│   │   ├── creacion_caracteristicas.py
+│   │   ├── estraccion_carac_fechas.py
+│   │   ├── extraccion_carac_imagenes.py
+│   │   ├── extraccion_carac_texto.py
+│   │   ├── features_interaction.py
+│   │   └── polinomics_features.py
+│   │
+│   ├── /scaling_numerical_vars       # Escalado de variables numéricas
+│   │   ├── comparativa_tecnicas_escalado.py
+│   │   ├── escalado_robusto.py
+│   │   ├── min_max.py
+│   │   ├── transformacion_logaritmica.py
+│   │   └── z_score.py
+│   │
+│   ├── generalized_model.py          # Modelo generalizado
+│   └── overfitting.py                # Manejo de sobreajuste
+│
+├── .gitignore            # Archivos ignorados por Git
+├── pyproject.toml        # Configuración del proyecto
+└── requirements.txt      # Dependencias de Python
 ```
 
-## 📊 Recursos Incluidos
-- `Ingeniería de Características_Presentación Completa_.pdf`: Teoría detallada
-- `FINAL-Ingenieria-de-Caracteristicas-[condensed].pptx`: Resumen ejecutivo
+## 📊 Recursos Clave
+- `documents/Ingenieria-de-Caracteristicas_Presentacion-Completa.pdf`: Teoría detallada (2.7 MB)
+- `presentations/FINAL-Ingenieria-de-Caracteristicas-en-Ciencia-de-Datos.pptx`: Presentación ejecutiva (4.2 MB)
 
 ## 📌 Cómo Contribuir
 1. Clona el repositorio
