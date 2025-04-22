@@ -31,6 +31,14 @@
 📫 *Contacto profesional: madrid@factoriaf5.org*
 
 ----
+```mermaid
+graph TD
+  A[Documentos PDF] --> B[Notebooks]
+  B --> C[Experimentación]
+  C --> D[Reports]
+  style B fill:#f9f,stroke:#333
+```
+----
 
 ## 📚 Contenido Teórico Completo (PDF)
 
@@ -163,53 +171,54 @@ mkdir -p {data/raw,notebooks,src,reports/figures}
 ## 📂 Estructura del Proyecto
 ```
 /repository
-├── /data                   # Datos del proyecto
-│   ├── /raw                # Datos crudos (.gitignored)
-│   └── /processed          # Datos procesados (.gitignored)
+├── /data # Datos del proyecto (raw/ y processed/ ignorados en Git)
+│ ├── /raw # 📦 Datos crudos originales
+│ └── /processed # 🧹 Datos limpios y transformados
 │
-├── /documents              # Documentación teórica
-│   └── Ingenieria-de-Caracteristicas_Presentacion-Completa.pdf (2.7 MB)
+├── /documents # 📚 Documentación teórica completa
+│ └── Ingenieria-de-Caracteristicas_Presentacion-Completa.pdf (2.7 MB)
 │
-├── /notebooks              # Ejemplos prácticos en Jupyter
+├── /notebooks # 🧪 NOTEBOOKS EDUCATIVOS (convertidos desde src/)
+│ │
+│ ├── /categorical_vars_codification # 🔠 Técnicas de codificación categórica
+│ │ ├── binary_encoding.ipynb # Codificación binaria de categorías
+│ │ ├── frequency_encoding.ipynb # Codificación por frecuencia
+│ │ ├── label_encoding.ipynb # Codificación por etiquetas
+│ │ ├── one_hot_encoding.ipynb # Codificación one-hot
+│ │ └── target_encoding.ipynb # Codificación por target
+│ │
+│ ├── /new_features_creation # ✨ Creación de nuevas características
+│ │ ├── aggregations.ipynb # Agregaciones estadísticas
+│ │ ├── binning.ipynb # Discretización (binning)
+│ │ ├── fechas.ipynb # Extracción de features temporales
+│ │ ├── imagenes.ipynb # Procesamiento de imágenes
+│ │ ├── texto.ipynb # NLP básico
+│ │ ├── interacciones.ipynb # Interacciones entre variables
+│ │ └── polinomicas.ipynb # Features polinómicas
+│ │
+│ ├── /scaling_numerical_vars # 🔢 Escalado de variables numéricas
+│ │ ├── comparativa_escalado.ipynb # Comparativa entre técnicas
+│ │ ├── robusto.ipynb # Escalado robusto
+│ │ ├── min_max.ipynb # Normalización Min-Max
+│ │ ├── logaritmica.ipynb # Transformación logarítmica
+│ │ └── z_score.ipynb # Estandarización Z-score
+│ │
+│ ├── modelado_generalizado.ipynb # 🧠 Modelos base
+│ └── manejo_overfitting.ipynb # ⚠️ Diagnóstico y tratamiento
 │
-├── /presentations          # Presentaciones ejecutivas
-│   └── FINAL-Ingenieria-de-Caracteristicas-en-Ciencia-de-Datos.pptx (4.2 MB)
+├── /presentations # 🎤 Presentaciones ejecutivas
+│ └── FINAL-Ingenieria-de-Caracteristicas-en-Ciencia-de-Datos.pptx (4.2 MB)
 │
-├── /reports                # Reportes y visualizaciones
-│   └── /figures            # Gráficos generados
+├── /reports # 📊 Reportes de análisis
+│ └── /figures # 📈 Gráficos exportados
 │
-├── /src                    # Código fuente organizado por técnicas
-│   │
-│   ├── /categorical_vars_codification  # Codificación variables categóricas
-│   │   ├── binary_encoding.py
-│   │   ├── frequency_encoding.py
-│   │   ├── label_encoding.py
-│   │   ├── one_hot_encoding.py
-│   │   └── target_encoding.py
-│   │
-│   ├── /new_features_creation         # Creación de nuevas features
-│   │   ├── aggregations.py
-│   │   ├── binning.py
-│   │   ├── creacion_caracteristicas.py
-│   │   ├── estraccion_carac_fechas.py
-│   │   ├── extraccion_carac_imagenes.py
-│   │   ├── extraccion_carac_texto.py
-│   │   ├── features_interaction.py
-│   │   └── polinomics_features.py
-│   │
-│   ├── /scaling_numerical_vars       # Escalado de variables numéricas
-│   │   ├── comparativa_tecnicas_escalado.py
-│   │   ├── escalado_robusto.py
-│   │   ├── min_max.py
-│   │   ├── transformacion_logaritmica.py
-│   │   └── z_score.py
-│   │
-│   ├── generalized_model.py          # Modelo generalizado
-│   └── overfitting.py                # Manejo de sobreajuste
+├── /src # 📜 Código fuente original (scripts .py)
+│ ├── generalized_model.py
+│ └── overfitting.py
 │
-├── .gitignore            # Archivos ignorados por Git
-├── pyproject.toml        # Configuración del proyecto
-└── requirements.txt      # Dependencias de Python
+├── .gitignore # 🚫 Archivos ignorados por Git
+├── pyproject.toml # ⚙️ Configuración del proyecto
+└── requirements.txt # 📦 Dependencias de Python
 ```
 
 ## 📊 Recursos Clave
