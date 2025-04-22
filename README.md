@@ -7,6 +7,31 @@
   <img src="https://img.shields.io/badge/scikit--learn-1.3-blueviolet?logo=scikit-learn" alt="Scikit-learn">
 </div>
 
+-----
+## 👥 Autores & Contribuidores
+
+<div align="center">
+
+### 🧑‍💻 **Jorge Luis Mateos**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jorge-luis-mateos-reyes/)  
+*Especialista en Feature Engineering*  
+*"Transformando datos en conocimiento"*  
+
+### 🧑‍🔬 **Juan Domingo**  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)](https://github.com/jdomdev)  
+*Estudioso de Modelado ML*  
+*"La calidad de las features determina el techo del modelo"*  
+
+</div>
+
+**Colaboradores**:  
+- Equipo **Factoria F5** [![Web](https://img.shields.io/badge/Website-FF6B6B?style=flat)](https://factoriaf5.org)  
+- Bootcamp **Ciencia de Datos** [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter)](https://twitter.com/factoriaf5)  
+
+📫 *Contacto profesional: madrid@factoriaf5.org*
+
+----
+
 ## 📚 Contenido Teórico Completo (PDF)
 
 ### 1️⃣ Introducción a la Ingeniería de Características
