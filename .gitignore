@@ -1,0 +1,98 @@
+### Python ###
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sbtarget/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter Notebook
+*.ipynb
+
+### IDE ###
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iml
+
+# Other IDEs
+*.swp
+*.swo
+
+### Data ###
+# Ignorar archivos de datos grandes/transitorios
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.db
+*.sqlite
+
+# Excepciones explícitas para documentos importantes (se mantienen)
+!presentaciones/*.pptx
+!documentos/*.pdf
+!docs/*.pdf
+
+### Logs and temp files ###
+*.log
+*.tmp
+*.bak
+*.pid
+*.DS_Store
+
+### Config files ###
+# No subir credenciales
+config.ini
+secrets.ini
+*.env
+*.key
+credentials.json
+
+### Notebook outputs ###
+# Ignorar outputs de notebooks (los ejemplos prácticos deben estar limpios)
+*-checkpoint.ipynb
+output/
+results/
+
+### OS generated files ###
+# Mac
+.DS_Store
+.DS_Store?
+
+# Windows
+Thumbs.db
+ehthumbs.db
